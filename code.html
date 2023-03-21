@@ -75,32 +75,32 @@
                 <div class="col-12 col-lg-8">
                     <pre class="line-numbers">
                         <code class="language-js">
-// controller
-function getValues() {
-    let inputString = document.getElementById('userString').value;
-
-    let reversedString = reverseAString(inputString);
-
-    displayString(reversedString);
-}
-
-// logic function
-// reverse a string
-function reverseAString(userString) {
-    let revString = '';
-
-    for(let i = userString.length - 1; i >= 0; i = i - 1) {
-        revString += userString[i];
-    }
-
-    return revString;
-}
-
-// view function
-function displayString(revString) {
-    document.getElementById('results').textContent = revString;
-    document.getElementById('alert').classList.remove('invisible');
-}
+                            // controller
+                            function getValues() {
+                                let inputString = document.getElementById('userString').value;
+                            
+                                let reversedString = reverseAString(inputString);
+                            
+                                displayString(reversedString);
+                            }
+                            
+                            // logic function
+                            // reverse a string
+                            function reverseAString(userString) {
+                                let revString = '';
+                            
+                                for(let i = userString.length - 1; i >= 0; i = i - 1) {
+                                    revString += userString[i];
+                                }
+                            
+                                return revString;
+                            }
+                            
+                            // view function
+                            function displayString(revString) {
+                                document.getElementById('results').textContent = revString;
+                                document.getElementById('alert').classList.remove('invisible');
+                            }
                         </code>
                     </pre>
                 </div>
@@ -108,7 +108,25 @@ function displayString(revString) {
                 <div class="col-12 col-lg-4">
                     <p>The code is structured in three functions:</p>
                     <h5><code>function getValues()</code></h5>
-                    <p></p>
+                    <p>
+                        This function takes the string input from an HTML form element with the ID 'userString',
+                        reverse it using a helper function called reverseAString(), and then displays the
+                        reversed string using another helper function called displayString().
+                    </p>
+                    <h5><code>function reverseAString()</code></h5>
+                    <p>
+                        This function takes in a parameter userString, and creates a new empty string called revString.
+                        It then loops through each character of userString in reverse order, starting from the last
+                        character and adding it to the revString. Once the loop has finished, revString contains the
+                        reversed version of userString and is returned.
+                    </p>
+                    <h5><code>function displayString()</code></h5>
+                    <p>
+                        This function takes the reversed string returned from reverseAString(), and sets the text
+                        content of an HTML element with the ID 'results' to the reversed string. It also removes a
+                        CSS class called 'invisible' from an HTML element with the ID 'alert', which presumably is
+                        used to display a success message to the user.
+                    </p>
                 </div>
             </div>
         </main>
@@ -123,9 +141,12 @@ function displayString(revString) {
                         <img src="/img/RPWhite logo - no background.svg" height="60">
                     </div>
                     <div class="col text-center text-lg-center">
-                        <a href="https://www.linkedin.com/in/ryan-penley-459892102/" target="_blank" class="socialicons"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://twitter.com/ryanpenleydev" target="_blank" class="socialicons"><i class="bi bi-twitter"></i></a>
-                        <a href="https://github.com/ryanpenley?tab=repositories" target="_blank" class="socialicons"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ryan-penley-459892102/" target="_blank"
+                            class="socialicons"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://twitter.com/ryanpenleydev" target="_blank" class="socialicons"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://github.com/ryanpenley?tab=repositories" target="_blank" class="socialicons"><i
+                                class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
